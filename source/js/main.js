@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {addCoachSwiper, getTabIndex} from './modules/add-swiper';
+import {switchProduct} from './modules/product';
 
 // ---------------------------------
 
@@ -13,6 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  switchProduct();
+  addCoachSwiper();
+  const slideActive = document.querySelectorAll('.swiper-slide-visible');
+  getTabIndex(slideActive);
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

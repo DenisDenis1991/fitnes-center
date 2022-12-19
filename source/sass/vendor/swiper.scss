@@ -516,6 +516,10 @@ button.swiper-pagination-bullet {
 .swiper-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto;
 }
+
+.swiper-slide-active {
+  margin-left: 40px;
+}
 .swiper-cube {
   overflow: visible;
 }

@@ -1,0 +1,9 @@
+.social {
+  @include list-reset();
+
+  display: flex;
+
+  & svg {
+    fill: aliceblue;
+  }
+}

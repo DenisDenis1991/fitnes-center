@@ -1,0 +1,23 @@
+.footer {
+  background-color: $black-russian;
+  padding: 40px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: block;
+  width: 88px;
+  height: 32px;
+
+  & svg {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
