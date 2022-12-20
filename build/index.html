@@ -7,6 +7,10 @@
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
   <div class="wrapper">
@@ -28,13 +32,13 @@
         <div class="container">
           <ul class="intro__list">
             <li class="intro__item">
-              <p class="intro__link">Тренажерный зал</p>
+              <p class="intro__description">Тренажерный зал</p>
             </li>
             <li class="intro__item">
-              <p class="intro__link">Групповые занятия</p>
+              <p class="intro__description">Групповые занятия</p>
             </li>
             <li class="intro__item">
-              <p class="intro__link">Кардио зона</p>
+              <p class="intro__description">Кардио зона</p>
             </li>
           </ul>
           <div class="intro__box">
@@ -69,7 +73,7 @@
             <img class="about__img" src="img/content/gym.jpg" width="660" height="401" alt="Тренажерный зал"
               srcset="img/content/gym@2x.jpg">
           </picture>
-          <div class="about__video video">
+          <!-- <div class="about__video video">
             <a class="video__img" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
               <picture>
                 <source type="image/webp" srcset="img/content/video.webp 1x, img/content/video@2x.webp 2x">
@@ -78,7 +82,39 @@
               </picture>
             </a>
             <button class="about__button" aria-label="Запустить видео">Play</button>
+          </div> -->
+
+          <div class="video">
+            <a class="vide__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+              <picture>
+                <source type="image/webp" srcset="img/content/video.webp 1x, img/content/video@2x.webp 2x">
+                <img class="video__content" src="img/content/video.png" width="364" height="258"
+                  srcset="img/content/video@2x.jpg 2x" alt="Видео">
+              </picture>
+            </a>
+            <button class="video__btn" aria-label="Запустить видео">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_7653_167)" stroke-opacity="0.2"
+                  stroke-width="2" />
+                <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_7653_167)" />
+                <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+                <defs>
+                  <linearGradient id="paint0_linear_7653_167" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ED0233" />
+                    <stop offset="1" stop-color="#003EB7" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_7653_167" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#003D85" />
+                    <stop offset="0.885417" stop-color="#B80027" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+            </button>
           </div>
+
         </div>
       </section>
       <section class="product" id="product">
@@ -226,7 +262,7 @@
               </div>
               <div class="games__time">
                 <span>Время</span>
-                swiper-slide coach__slide <time datetime="2019-03-07T12:00"><b>12:00</b></time>
+                <time datetime="2019-03-07T12:00"><b>12:00</b></time>
               </div>
             </div>
           </div>
@@ -348,58 +384,173 @@
         </div>
       </section>
       <section class="advantages">
-          <h2 class="advantages__heading">Наши преимущества</h2>
-          <div class="advantages__wrapper">
-            <div class="advantages__block">
-              <div>
-                <p class="advantages__quantity">900</p>
-                <p class="advantages__measure">кв/м</p>
-              </div>
-              <dl class="advantages__list">
-                <dt>Площадь</dt>
-                <dd>Занимайтесь без очередей и толпучки</dd>
-              </dl>
+        <h2 class="advantages__heading">Наши преимущества</h2>
+        <div class="advantages__wrapper">
+          <div class="advantages__block">
+            <div>
+              <p class="advantages__quantity">900</p>
+              <p class="advantages__measure">кв/м</p>
             </div>
-            <div class="advantages__block">
-              <div>
-                <p class="advantages__quantity">70</p>
-                <p class="advantages__measure">машин</p>
-              </div>
-              <dl class="advantages__list">
-                <dt>Собственная парковка</dt>
-                <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
-              </dl>
-            </div>
-            <div class="advantages__special-block">
-              <b>100</b>
-              <p>Тренажеров</p>
-              <span>Современные тренажеры на все группы мышц</span>
-            </div>
-            <div class="advantages__block">
-              <div>
-                <p class="advantages__quantity">350</p>
-                <p class="advantages__measure">мест</p>
-              </div>
-              <dl class="advantages__list">
-                <dt>Комфорт</dt>
-                <dd>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</dd>
-              </dl>
-            </div>
-            <div class="advantages__block">
-              <div>
-                <p class="advantages__quantity">5+</p>
-                <p class="advantages__measure">лет</p>
-              </div>
-              <dl class="advantages__list">
-                <dt>Тренерский опыт</dt>
-                <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
-              </dl>
-            </div>
+            <dl class="advantages__list">
+              <dt>Площадь</dt>
+              <dd>Занимайтесь без очередей и толпучки</dd>
+            </dl>
           </div>
+          <div class="advantages__block">
+            <div>
+              <p class="advantages__quantity">70</p>
+              <p class="advantages__measure">машин</p>
+            </div>
+            <dl class="advantages__list">
+              <dt>Собственная парковка</dt>
+              <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
+            </dl>
+          </div>
+          <div class="advantages__special-block">
+            <b>100</b>
+            <p>Тренажеров</p>
+            <span>Современные тренажеры на все группы мышц</span>
+          </div>
+          <div class="advantages__block">
+            <div>
+              <p class="advantages__quantity">350</p>
+              <p class="advantages__measure">мест</p>
+            </div>
+            <dl class="advantages__list">
+              <dt>Комфорт</dt>
+              <dd>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</dd>
+            </dl>
+          </div>
+          <div class="advantages__block">
+            <div>
+              <p class="advantages__quantity">5+</p>
+              <p class="advantages__measure">лет</p>
+            </div>
+            <dl class="advantages__list">
+              <dt>Тренерский опыт</dt>
+              <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
+            </dl>
+          </div>
+        </div>
 
       </section>
       <section class="stocks">
         <h2 class="stock__heading">Акции</h2>
+        <article class="stocks__promo">
+          <div class="stocks__left">
+            <div>
+              <h3 class="stocks__title">Год</h3>
+              <b>4999</b>
+              <p class="stocks__description">Безлимитный абонемент в тренажерный зал</p>
+            </div>
+            <a class="stocks__btn stocks__btn--left">подробнее</a>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/content/promo.webp 1x, img/content/promo@2x.webp 2x">
+            <img class="promo__img" src="img/content/promo.jpg" width="280" height="462" alt="Акции"
+              srcset="img/content/promo@2x.jpg 2x">
+          </picture>
+        </article>
+        <article class="stocks__box">
+          <div class="stocks__card">
+            <dl>
+              <dt class="stocks__card-title">Месяц бесплатно</dt>
+              <dd class="stocks__card-description">Приведи друга, получи абонемент в подарок</dd>
+            </dl>
+            <a class="stocks__btn">подробнее</a>
+          </div>
+          <div class="stocks__card">
+            <dl>
+              <dt class="stocks__card-title">Скидка 20%</dt>
+              <dd class="stocks__card-description">Корпоративный фитнес с командой</dd>
+            </dl>
+            <a class="stocks__btn">подробнее</a>
+          </div>
+        </article>
+      </section>
+      <section class="feedback">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide feedback__slide">
+              <picture>
+                <source type="image/webp" srcset="img/content/ellipse.webp 1x, img/content/ellipse@2x.webp 2x">
+                <img class="feedback__img" src="img/content/ellipse.png" width="80" height="80" alt="Отзыввы"
+                  srcset="img/content/ellipse@2x.png 2x">
+              </picture>
+              <div>
+                <h3 class="feedback__title">Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+            <div class="swiper-slide feedback__slide">
+              <picture>
+                <source type="image/webp" srcset="img/content/ellipse.webp 1x, img/content/ellipse@2x.webp 2x">
+                <img class="feedback__img" src="img/content/ellipse.png" width="80" height="80" alt="Отзыввы"
+                  srcset="img/content/ellipse@2x.png 2x">
+              </picture>
+              <div>
+                <h3 class="feedback__title">Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+            <div class="swiper-slide feedback__slide">
+              <picture>
+                <source type="image/webp" srcset="img/content/ellipse.webp 1x, img/content/ellipse@2x.webp 2x">
+                <img class="feedback__img" src="img/content/ellipse.png" width="80" height="80" alt="Отзыввы"
+                  srcset="img/content/ellipse@2x.png 2x">
+              </picture>
+              <div>
+                <h3 class="feedback__title">Анна Орлова</h3>
+                <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="form__heading">Бесплатное занятие </h2>
+        <form method="get" action="https://echo.htmlacademy.ru/">
+          <div class="form__contact">
+            <label>
+              <input type="text" name="name" minlength="3" placeholder="Имя" required>
+            </label>
+            <label>
+              <input type="tel" name="phone" placeholder="Телефон" required>
+            </label>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="contact">
+        <h2 class="contact__heading">Контакты</h2>
+        <div class="contact__wrapper">
+          <div>
+            <h3 class="contact__title">Адрес:</h3>
+            <address class="contact__description">
+              г. Омск, ул.60 лет Октября, 7
+            </address>
+          </div>
+          <div>
+            <h3 class="contact__title">Телефон:</h3>
+            <a href="tel:88005555555" class="contact__description">8-800-555-55-55</a>
+          </div>
+          <div>
+            <h3 class="contact__title">График работы:</h3>
+            <p class="contact__description">Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          <div>
+            <h3 class="contact__title">Адрес:</h3>
+            <a class="contact__description" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">

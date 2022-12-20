@@ -1256,11 +1256,35 @@ button.swiper-pagination-bullet {
 }
 
 @font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/robotocondensed-bold.woff2") format("woff2"), url("../fonts/robotocondensed-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
+  src: url("../fonts/robotocondensed-light.woff2") format("woff2"), url("../fonts/robotocondensed-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/roboto-condensed.woff2") format("woff2"), url("../fonts/roboto-condensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/alumnisans-600.woff2") format("woff2");
 }
 
 *,
@@ -1282,8 +1306,8 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
-  color: #000000;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #102654;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1482,7 +1506,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -1667,6 +1691,75 @@ button,
 .intro {
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   width: 100%;
+  padding: 51px 0;
+  color: #ffffff;
+}
+
+.intro .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.intro__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 19px;
+}
+
+.intro__description {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.intro__title {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  width: 133px;
+  margin-left: auto;
+}
+
+.intro__heading {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 110px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  width: 298px;
+  margin-bottom: 80px;
+}
+
+.intro__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 4px solid #ffffff;
+  padding: 24px 55px;
+}
+
+.intro__img {
+  margin-left: 64px;
 }
 
 .product {
@@ -1911,6 +2004,38 @@ button,
   margin: 0;
   text-align: center;
   width: 193px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+
+.video__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 /* @mixin hover-focus {
