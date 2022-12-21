@@ -1,0 +1,39 @@
+.about {
+  position: relative;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 80px;
+    padding-left: 120px;
+    justify-content: end;
+  }
+}
+
+.about__heading {
+  @include style-reset();
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+  font-family: $ff-additional;
+  letter-spacing: 0.03em;
+  margin: 50px 0 20px;
+}
+
+.about__description {
+  @include style-reset();
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 50px;
+}
+
+.about__text {
+  @include style-reset();
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  &--add {
+    margin-top: 16px;
+  }
+}

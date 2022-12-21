@@ -1,0 +1,65 @@
+.coach__heading {
+  @include list-reset();
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  margin-bottom: 45px;
+}
+
+.coach__wrapper {
+  position: relative;
+}
+
+.coach__slide {
+  aspect-ratio: 260/294;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 30px;
+  max-width: 260px;
+  margin-right: 0;
+
+  &:hover {
+    background: rgba(16, 38, 84, 0.89);
+  }
+
+  &:hover .coach__info {
+    display: block;
+  }
+}
+
+.coach__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.coach__name {
+  @include style-reset();
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+  text-align: center;
+}
+
+.coach__info {
+  display: none;
+  margin: 20px 50px;
+}
+
+.coach__title {
+  @include style-reset();
+  color: $spindle;
+}
+
+.coach__resume {
+  @include style-reset();
+  color: $color-default-white;
+}
+
+.coach__description {
+  @include style-reset();
+}

@@ -26,9 +26,9 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="page__main main">
       <h1 class="visually-hidden">Фитнес зал Supergym</h1>
-      <section class="intro">
+      <section class="main__intro intro">
         <div class="container">
           <ul class="intro__list">
             <li class="intro__item">
@@ -54,7 +54,7 @@
             </picture>
           </div>
       </section>
-      <section class="about">
+      <section class="main__about about">
         <div class="container">
           <div>
             <h2 class="about__heading">Тренажерный зал</h2>
@@ -63,7 +63,7 @@
               Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
               Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
             </p>
-            <p class="about__add-text">
+            <p class="about__text about__text--add">
               В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
               несколько оборудованных залов для различных видов групповых занятий.
             </p>
@@ -73,19 +73,8 @@
             <img class="about__img" src="img/content/gym.jpg" width="660" height="401" alt="Тренажерный зал"
               srcset="img/content/gym@2x.jpg">
           </picture>
-          <!-- <div class="about__video video">
-            <a class="video__img" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-              <picture>
-                <source type="image/webp" srcset="img/content/video.webp 1x, img/content/video@2x.webp 2x">
-                <img class="about__img" src="img/content/video.png" width="660" height="401" alt="Видео"
-                  srcset="img/content/video@2x.png 2x">
-              </picture>
-            </a>
-            <button class="about__button" aria-label="Запустить видео">Play</button>
-          </div> -->
-
           <div class="video">
-            <a class="vide__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+            <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
               <picture>
                 <source type="image/webp" srcset="img/content/video.webp 1x, img/content/video@2x.webp 2x">
                 <img class="video__content" src="img/content/video.png" width="364" height="258"
@@ -117,7 +106,7 @@
 
         </div>
       </section>
-      <section class="product" id="product">
+      <section class="main__product product" id="product">
         <div class="container">
           <div class="product__wrapper">
             <h2 class="product__heading">Абонементы</h2>
@@ -130,8 +119,8 @@
               <div class="product__card-box is-open" data-tab="1">
                 <ul class="product__list">
                   <li class="product__item" tabindex="0">
-                    <h3>С&nbsp;тренером</h3>
-                    <span>12&nbsp;занятий</span>
+                    <h3 class="product__title">С&nbsp;тренером</h3>
+                    <span class="product__text">12&nbsp;занятий</span>
                     <b>5000</b>
                     <p>5000
                       <svg class="product__rouble" aria-hidden="true" focusable="false" width="30" height="42"
@@ -139,11 +128,11 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                   <li class="product__item" tabindex="0">
-                    <h3>Дневной</h3>
-                    <span>с&nbsp;8:00 до&nbsp;17:00</span>
+                    <h3 class="product__title">Дневной</h3>
+                    <span class="product__text">с&nbsp;8:00 до&nbsp;17:00</span>
                     <b>1700</b>
                     <p>1700
                       <svg class="product__rouble" aria-hidden="true" focusable="false" width="30" height="42"
@@ -151,11 +140,11 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                   <li class="product__item" tabindex="0">
-                    <h3>Полный день</h3>
-                    <span>с&nbsp;8:00 до&nbsp;22:00</span>
+                    <h3 class="product__title">Полный день</h3>
+                    <span class="product__text">с&nbsp;8:00 до&nbsp;22:00</span>
                     <b>2700</b>
                     <p>2700
                       <svg class="product__rouble" aria-hidden="true" focusable="false" width="30" height="42"
@@ -163,7 +152,7 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
@@ -179,7 +168,7 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                   <li class="product__item" tabindex="0">
                     <h3>Дневной</h3>
@@ -191,7 +180,7 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                   <li class="product__item" tabindex="0">
                     <h3>Полный день</h3>
@@ -203,7 +192,7 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
@@ -219,7 +208,7 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                   <li class="product__item" tabindex="0">
                     <h3>Дневной</h3>
@@ -231,7 +220,7 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                   <li class="product__item" tabindex="0">
                     <h3>Полный день</h3>
@@ -243,7 +232,7 @@
                         <use href="img/sprite.svg#rouble"></use>
                       </svg>
                     </p>
-                    <a class="product__link btn" href="#">купить абонемент</a>
+                    <a class="product__link" href="#">купить абонемент</a>
                   </li>
                 </ul>
               </div>
@@ -251,41 +240,50 @@
           </div>
         </div>
       </section>
-      <article class="games">
-        <div class="games__wrapper">
-          <div class="games__box-title">
-            <h2 class="games__heading">super games</h2>
-            <div class="games__date">
-              <div class="games__day">
-                <span>Дата</span>
-                <time datetime="2019-03-07"><b>7</b>Марта<br>2019</time>
-              </div>
-              <div class="games__time">
-                <span>Время</span>
-                <time datetime="2019-03-07T12:00"><b>12:00</b></time>
+      <article class="main__games games">
+        <div class="container">
+          <div class="games__wrapper">
+            <div class="games__box-title">
+              <h2 class="games__heading">super games</h2>
+              <div class="games__date">
+                <div class="games__day">
+                  <span>Дата</span>
+                  <time datetime="2019-03-07"><b>7</b>Марта<br>2019</time>
+                </div>
+                <div class="games__day">
+                  <span>Время</span>
+                  <time datetime="2019-03-07T12:00"><b>12:00</b></time>
+                </div>
               </div>
             </div>
+            <p class="games__description">Ежегодные соревнования по CrossFit</p>
+            <a class="games__link" href="#">заполнить заявку</a>
           </div>
-          <p class="games__description">Ежегодные соревнования по CrossFit</p>
-          <a class="games__link" href="#">заполнить заявку</a>
+          <picture>
+            <source type="image/webp" srcset="img/content/game.webp 1x, img/content/game@2x.webp 2x">
+            <img class="games__img" src="img/content/game.jpg" width="660" height="500" alt="Супер геймс"
+              srcset="img/content/game@2x.jpg 2x">
+          </picture>
         </div>
-        <picture>
-          <source type="image/webp" srcset="img/content/game.webp 1x, img/content/game@2x.webp 2x">
-          <img class="games__img" src="img/content/game.jpg" width="660" height="500" alt="Супер геймс"
-            srcset="img/content/game@2x.jpg 2x">
-        </picture>
       </article>
       <section class="coach">
-        <h2 class="coach__heading">Тренеры</h2>
+        <div class="container">
+
+
+          <h2 class="coach__heading">Тренеры</h2>
+        </div>
         <div class="coach__wrapper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
           <div class="swiper coach-swiper">
             <!-- Additional required wrapper -->
+
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide coach__slide">
                 <picture>
                   <source type="image/webp" srcset="img/content/anna.webp 1x, img/content/anna@2x.webp 2x">
-                  <img width="260" height="294" src="./img/content/anna.jpg" alt="Тренер Анна"
+                  <img class="coach__img" width="260" height="294" src="./img/content/anna.jpg" alt="Тренер Анна"
                     srcset="./img/content/anna@2x 2x.jpg">
                 </picture>
                 <h2 class="coach__name">Анна Павлова</h2>
@@ -307,7 +305,7 @@
               <div class="swiper-slide coach__slide">
                 <picture>
                   <source type="image/webp" srcset="img/content/alex.webp 1x, img/content/alex@2x.webp 2x">
-                  <img width="260" height="294" src="./img/content/alex.jpg" alt="Тренер Алексей"
+                  <img class="coach__img" width="260" height="294" src="./img/content/alex.jpg" alt="Тренер Алексей"
                     srcset="./img/content/alex@2x 2x.jpg">
                 </picture>
                 <h2 class="coach__name">Алексей Лавров</h2>
@@ -329,8 +327,8 @@
               <div class="swiper-slide coach__slide">
                 <picture>
                   <source type="image/webp" srcset="img/content/alexandr.webp 1x, img/content/alexandr@2x.webp 2x">
-                  <img width="260" height="294" src="./img/content/alexandr.jpg" alt="Тренер Александр"
-                    srcset="./img/content/alexandr@2x 2x.jpg">
+                  <img class="coach__img" width="260" height="294" src="./img/content/alexandr.jpg"
+                    alt="Тренер Александр" srcset="./img/content/alexandr@2x 2x.jpg">
                 </picture>
                 <h2 class="coach__name">Александр Пашков</h2>
                 <div class="coach__info">
@@ -351,7 +349,7 @@
               <div class="swiper-slide coach__slide">
                 <picture>
                   <source type="image/webp" srcset="img/content/mary.webp 1x, img/content/mary@2x.webp 2x">
-                  <img width="260" height="294" src="./img/content/mary.jpg" alt="Тренер Мария"
+                  <img class="coach__img" width="260" height="294" src="./img/content/mary.jpg" alt="Тренер Мария"
                     srcset="./img/content/mary@2x 2x.jpg">
                 </picture>
                 <h2 class="coach__name">Мария Кетова</h2>
@@ -371,15 +369,6 @@
                 </div>
               </div>
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
       </section>
