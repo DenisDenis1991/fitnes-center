@@ -12,13 +12,12 @@
 }
 
 .coach__slide {
-  aspect-ratio: 260/294;
+  height: 294px;
+  margin-right: 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding-bottom: 30px;
-  max-width: 260px;
-  margin-right: 0;
 
   &:hover {
     background: rgba(16, 38, 84, 0.89);
@@ -27,11 +26,16 @@
   &:hover .coach__info {
     display: block;
   }
+
+  &:hover .coach__img {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
 }
 
 .coach__img {
   position: absolute;
   z-index: -1;
+  height: 100%;
   top: 0;
 }
 

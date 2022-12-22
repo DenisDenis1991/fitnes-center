@@ -1,0 +1,97 @@
+.stocks__promo {
+  color: $color-default-white;
+  display: flex;
+}
+
+.stock__heading {
+  @include style-reset();
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: $ff-additional;
+  margin-bottom: 30px;
+}
+
+.stocks__left {
+  width: 280px;
+  background-color: $torch-red;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+
+  & b {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 109px;
+  }
+}
+
+.stocks__title {
+  @include style-reset();
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.stocks__description {
+  @include style-reset();
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.stocks__btn {
+  font-weight: 700;
+  color: $resolution-blue;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid $resolution-blue;
+  margin-top: auto;
+  width: fit-content;
+
+  &--left {
+    color: $color-default-white;
+    border-color: $color-default-white;
+  }
+}
+
+.stocks__wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 40px;
+}
+
+.stocks__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $resolution-blue;
+}
+
+.stocks__card {
+  border: 7px solid transparent;
+  border-image-source: linear-gradient(148.82deg, $crimson 0.85%, $smalt 100%);
+  border-image-width: 7px;
+  border-image-slice: 3;
+  padding: 30px;
+  min-height: 211px;
+  display: flex;
+  flex-direction: column;
+
+  & dl {
+    @include list-reset();
+  }
+}
+
+.stocks__card-title {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0 0 11px;
+}
+
+.stocks__card-description {
+  margin: 0;
+}

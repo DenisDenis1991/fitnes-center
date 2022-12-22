@@ -1,13 +1,24 @@
 .advantages {
-  padding-left: 33px;
+  background-color: $ghost-white;
+  padding: 145px 0 90px 33px;
 
   @include vp-1199 {
     padding-left: 0;
   }
 }
 
+.advantages__heading {
+  @include style-reset();
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  font-family: $ff-additional;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .advantages__wrapper {
-  background-color: $ghost-white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 150px;
@@ -101,7 +112,7 @@
     color: $color-default-white;
     margin: 0;
     text-align: center;
-    width: 193px;
+    width: 172px;
   }
 
   @include vp-1199 {

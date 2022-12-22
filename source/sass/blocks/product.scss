@@ -91,7 +91,7 @@
   &:hover,
   &:focus {
     border: 7px solid transparent;
-    border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+    border-image-source: linear-gradient(148.82deg, $crimson 0.85%, $smalt 100%);
     border-image-width: 7px;
     border-image-slice: 3;
     outline: none;
@@ -100,7 +100,7 @@
   &:hover .product__link,
   &:focus .product__link {
     border: none;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, $torch-red 17.6%, $cobalt 95.31%);
   }
 }
 
@@ -157,7 +157,7 @@
   &:hover,
   &:focus {
     border: 2px solid transparent;
-    border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+    border-image-source: linear-gradient(148.82deg, $crimson 0.85%, $smalt 100%);
     border-image-width: 2px;
     border-image-slice: 3;
     outline: none;

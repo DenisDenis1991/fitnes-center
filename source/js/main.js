@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {addCoachSwiper, getTabIndex} from './modules/add-swiper';
+import {addCoachSwiper, getTabIndex, addFeedbackSwiper} from './modules/add-swiper';
 import {switchProduct} from './modules/product';
 
 // ---------------------------------
@@ -17,6 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   switchProduct();
   addCoachSwiper();
+  addFeedbackSwiper();
+
+
   const slideActive = document.querySelectorAll('.swiper-slide-visible');
   getTabIndex(slideActive);
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

@@ -29,7 +29,6 @@
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
-  max-width: 1183px;
 }
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
@@ -212,7 +211,7 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 10px;
+  left: -4.5%;
   right: auto;
 }
 .swiper-button-prev:after,
@@ -221,7 +220,7 @@
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 10px;
+  right: -4.5%;
   left: auto;
 }
 .swiper-button-next:after,
@@ -518,9 +517,9 @@ button.swiper-pagination-bullet {
   pointer-events: auto;
 }
 
-.swiper-slide-active {
-  margin-left: 40px;
-}
+// .swiper-slide-active {
+//   margin-left: 40px;
+// }
 .swiper-cube {
   overflow: visible;
 }
