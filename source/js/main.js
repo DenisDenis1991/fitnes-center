@@ -6,7 +6,7 @@ import {switchProduct} from './modules/product';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
+  const textShow = document.querySelector('.about__text--add');
   // Utils
   // ---------------------------------
 
@@ -18,10 +18,19 @@ window.addEventListener('DOMContentLoaded', () => {
   switchProduct();
   addCoachSwiper();
   addFeedbackSwiper();
-
-
   const slideActive = document.querySelectorAll('.swiper-slide-visible');
   getTabIndex(slideActive);
+  const breakpoint = window.matchMedia('(min-width:1200px)');
+  const breakpointChecker = () => {
+    if (breakpoint.matches) {
+      textShow.style.display = 'block';
+    } else {
+      textShow.style.display = 'none';
+    }
+  };
+  breakpoint.addListener(breakpointChecker);
+  breakpointChecker();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

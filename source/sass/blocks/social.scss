@@ -1,8 +1,10 @@
 .social {
   @include list-reset();
-
+  max-width: 100px;
+  width: 100%;
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: space-between;
   & svg {
     fill: aliceblue;
   }

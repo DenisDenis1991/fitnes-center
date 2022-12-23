@@ -62,6 +62,10 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .stocks__box {
@@ -69,6 +73,11 @@
   flex-direction: column;
   justify-content: space-between;
   color: $resolution-blue;
+
+  @include vp-1199 {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .stocks__card {

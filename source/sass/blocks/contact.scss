@@ -1,0 +1,46 @@
+.contact {
+  padding: 56px 0 70px 120px;
+  border-top: 1px solid $light-gray;
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 170px max-content;
+  row-gap: 30px;
+  column-gap: 120px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 95%;
+    width: 1px;
+    background-color: $light-gray;
+    position: absolute;
+    left: 225px;
+    top: 10px;
+  }
+}
+
+.contact__heading {
+  @include style-reset();
+  font-family: $ff-additional;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+}
+
+.contact__title {
+  @include style-reset();
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact__description {
+  @include style-reset();
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  padding-bottom: 5px;
+}

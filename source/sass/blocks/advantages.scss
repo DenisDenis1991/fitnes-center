@@ -16,6 +16,11 @@
   font-family: $ff-additional;
   text-align: center;
   margin-bottom: 50px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+  }
 }
 
 .advantages__wrapper {
@@ -52,6 +57,12 @@
   background-clip: text;
   color: transparent;
   margin: 0;
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 50px;
+    margin-bottom: 1px;
+  }
 }
 
 .advantages__measure {
@@ -69,6 +80,13 @@
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 20px;
+
+    @include vp-1199 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: -2px;
+      margin-bottom: 0;
+    }
   }
 
   & dd {

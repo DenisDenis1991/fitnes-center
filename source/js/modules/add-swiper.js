@@ -23,7 +23,6 @@ const addFeedbackSwiper = () => {
     slidesPerView: 1,
     watchOverflow: true,
     loop: false,
-    // autoHeight: true,
 
     keyboard: {
       enabled: false,

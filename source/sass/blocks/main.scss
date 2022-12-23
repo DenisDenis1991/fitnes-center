@@ -3,11 +3,19 @@
 }
 
 .main__about {
-  margin: 120px 0 235px;
+  margin-bottom: 235px;
+
+  @include vp-1199 {
+    margin-bottom: 180px;
+  }
 }
 
 .main__product {
   margin-bottom: 120px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
 }
 
 .main__games {
@@ -16,16 +24,32 @@
 
 .main__coach {
   margin-bottom: 90px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
 }
 
 .main__advantages {
   margin-bottom: 150px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
 }
 
 .main__stocks {
   margin-bottom: 115px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
 }
 
 .main__feedback {
   margin-bottom: 120px;
+
+  @include vp-1199 {
+    margin-bottom: 100px;
+  }
 }
