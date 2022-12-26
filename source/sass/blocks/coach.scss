@@ -1,10 +1,11 @@
 .coach__heading {
   @include list-reset();
+  font-family: $ff-additional;
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin-bottom: 45px;
+  margin-bottom: 51px;
 
   @include vp-1199 {
     font-size: 42px;
@@ -18,21 +19,22 @@
   position: relative;
 
   @include vp-1199 {
-    max-width: 566px;
     margin: 0 auto;
   }
 }
 
 .coach__slide {
-  height: 294px;
+  aspect-ratio: 260/294;
   margin-right: 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 
   &:hover {
     background: rgba(16, 38, 84, 0.89);
+    justify-content: start;
+    padding-top: 50px;
   }
 
   &:hover .coach__info {
@@ -64,19 +66,42 @@
 
 .coach__info {
   display: none;
-  margin: 20px 50px;
+  margin: -4px 0;
 }
 
 .coach__title {
   @include style-reset();
+  text-align: center;
   color: $spindle;
+  margin-bottom: 32px;
 }
 
 .coach__resume {
-  @include style-reset();
+  @include list-reset();
   color: $color-default-white;
+  padding-left: 49px;
+
+  & li {
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 14px;
+  }
+
+  & li::before {
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: $color-default-white;
+    content: "";
+  }
 }
 
 .coach__description {
   @include style-reset();
+  font-size: 14px;
+  line-height: 21px;
 }

@@ -75,7 +75,8 @@
   color: $resolution-blue;
 
   @include vp-1199 {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 }
@@ -103,4 +104,8 @@
 
 .stocks__card-description {
   margin: 0;
+}
+
+.stocks__img {
+  width: 100%;
 }

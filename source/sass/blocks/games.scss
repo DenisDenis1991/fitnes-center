@@ -13,7 +13,7 @@
 
 .games__box-title {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   justify-content: space-between;
 }
 
@@ -22,11 +22,11 @@
   flex-direction: column;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   }
 
   & span {
-    padding-bottom: 10px;
+    padding-bottom: 3px;
     width: 64px;
     font-size: 18px;
     line-height: 27px;
@@ -84,7 +84,6 @@
   @include style-reset();
   font-size: 18px;
   line-height: 27px;
-  text-align: center;
   margin-bottom: 45px;
 
   @include vp-1199 {
