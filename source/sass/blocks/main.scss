@@ -1,5 +1,9 @@
 .main__intro {
   margin-bottom: 120px;
+
+  @include vp-1199 {
+    margin-bottom: 101px;
+  }
 }
 
 .main__about {
@@ -20,6 +24,10 @@
 
 .main__games {
   margin-bottom: 105px;
+
+  @include vp-1199 {
+    margin-bottom: 99px;
+  }
 }
 
 .main__coach {
@@ -31,7 +39,7 @@
 }
 
 .main__advantages {
-  margin-bottom: 150px;
+  margin-bottom: 146px;
 
   @include vp-1199 {
     margin-bottom: 100px;
@@ -39,7 +47,7 @@
 }
 
 .main__stocks {
-  margin-bottom: 115px;
+  margin-bottom: 118px;
 
   @include vp-1199 {
     margin-bottom: 100px;

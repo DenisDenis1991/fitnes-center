@@ -16,12 +16,23 @@
 
 .intro__box {
   margin-top: 48px;
+
+  @include vp-1199 {
+    margin-right: 6px;
+    margin-top: 24px;
+  }
+
 }
 
 .intro__list {
   @include list-reset();
   padding-left: 19px;
   margin-top: 114px;
+
+  @include vp-1199 {
+    margin-top: 45px;
+    padding: 0;
+  }
 }
 
 .intro__description {
@@ -29,6 +40,10 @@
   font-size: 14px;
   line-height: 21px;
   text-align: right;
+
+  @include vp-1199 {
+    min-width: 113px;
+  }
 }
 
 .intro__title {
@@ -44,13 +59,14 @@
   @include vp-1199 {
     font-size: 34px;
     line-height: 41px;
+    margin: 2px -45px 0 auto;
   }
 }
 
 .intro__heading {
   @include style-reset();
   font-family: $ff-additional;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 92px;
   line-height: 110px;
   text-align: right;
@@ -61,8 +77,13 @@
   text-transform: uppercase;
 
   @include vp-1199 {
-    font-size: 72px;
+    font-size: 74px;
     line-height: 86px;
+    text-transform: none;
+    width: 235px;
+    letter-spacing: 0.03em;
+    margin: 7px 0 37px;
+    padding: 0 22px 0 0;
   }
 }
 
@@ -82,7 +103,8 @@
   margin: 0 auto;
 
   @include vp-1199 {
-    padding: 24px 33px;
+    padding: 19px 19px;
+    width: 187px;
   }
 }
 
@@ -90,6 +112,7 @@
   margin-left: 30px;
 
   @include vp-1199 {
-    margin-left: 30px;
+    margin-left: 0;
+    min-height: 390px;
   }
 }

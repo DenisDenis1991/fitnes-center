@@ -4,18 +4,39 @@
   position: relative;
 
   &::after {
-    content: url("./../img/content/ring.webp");
+    content: "";
     display: block;
     width: 287px;
-    height: 343px;
+    height: 420px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -79px;
     z-index: 1;
+    background-size: cover;
+
+    @media (min-width: 1200px) {
+      background-image: url("./../img/content/ring.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("./../img/content/ring@2x.webp");
+      }
+    }
+
+    @include vp-1199 {
+      background-image: url("./../img/content/ring-tablet.webp");
+      bottom: -126px;
+      width: 348px;
+      height: 449px;
+      right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("./../img/content/ring-tablet@2x.webp");
+      }
+    }
   }
 
   @include vp-1199 {
-    padding: 100px 0 100px;
+    padding: 103px 0 100px;
   }
 }
 
@@ -37,6 +58,8 @@
   @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
+    padding-right: 15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -47,6 +70,10 @@
   width: 342px;
   display: flex;
   justify-content: space-between;
+
+  @include vp-1199 {
+    margin-bottom: 43px;
+  }
 }
 
 .product__card-box {
@@ -75,8 +102,11 @@
   position: relative;
   border: 7px solid transparent;
 
-  @include vp-1199 {
-    padding: 68px 118px;
+
+  &:not(:first-child) {
+    @include vp-1199 {
+      padding: 60px 118px;
+    }
   }
 
   & p {
@@ -134,6 +164,7 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 27px;
+    padding: 0 5px;
   }
 }
 

@@ -2,6 +2,10 @@
   position: absolute;
   width: 100%;
   top: 30px;
+
+  @include vp-1199 {
+    top: 34px;
+  }
 }
 
 .header__wrapper {
@@ -17,8 +21,22 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .header__logo {
   padding-top: 10px;
+
+  @include vp-1199 {
+    padding-top: 7px;
+
+    & svg {
+      width: 82px;
+      height: 17px;
+    }
+  }
 }

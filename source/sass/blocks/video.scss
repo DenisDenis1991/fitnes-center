@@ -6,6 +6,16 @@
   height: 228px;
   left: 50%;
   transform: translate(-39%, 9%);
+
+  @include vp-1199 {
+    width: 32%;
+    min-width: 266px;
+    max-height: 100%;
+    height: 167px;
+    padding-top: 22%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+  }
 }
 
 .video__link {
@@ -17,6 +27,7 @@
     background-color: rgba(20, 54, 122, 0.5);
     z-index: 1;
     position: absolute;
+    top: 0;
   }
 }
 
@@ -41,4 +52,14 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 2;
+
+  & svg {
+    width: 73px;
+    height: 73px;
+  }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+  }
 }

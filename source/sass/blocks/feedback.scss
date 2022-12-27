@@ -7,6 +7,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 37px;
+  padding-left: 6px;
 }
 
 .feedback__wrapper {
@@ -20,15 +21,15 @@
   background-color: $resolution-blue;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   height: auto;
-  padding: 60px;
+  padding: 60px 60px 56px;
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 20px;
+  gap: 32px;
 }
 
 .feedback__title {
   @include style-reset();
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .feedback__description {

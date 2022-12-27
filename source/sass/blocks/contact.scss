@@ -1,12 +1,12 @@
 .contact {
-  padding: 56px 0 70px 120px;
+  padding: 58px 0 62px 124px;
   border-top: 1px solid $light-gray;
 }
 
 .contact__wrapper {
   display: grid;
   grid-template-columns: 170px max-content;
-  row-gap: 30px;
+  row-gap: 16px;
   column-gap: 120px;
   position: relative;
 
@@ -28,6 +28,8 @@
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
+  margin-bottom: 39px;
+  letter-spacing: 0.03em;
 }
 
 .contact__title {

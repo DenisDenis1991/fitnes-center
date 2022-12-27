@@ -9,12 +9,24 @@
 .games__wrapper {
   padding: 85px 75px;
   background-color: $torch-red;
+
+  @include vp-1199 {
+    padding: 47px 36px 53px 43px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .games__box-title {
   display: flex;
   margin-bottom: 16px;
   justify-content: space-between;
+
+  @include vp-1199 {
+    gap: 27px;
+    margin-bottom: 0;
+  }
 }
 
 .games__day {
@@ -23,6 +35,10 @@
 
   &:not(:last-child) {
     margin-bottom: 18px;
+
+    @include vp-1199 {
+      margin-bottom: 0;
+    }
   }
 
   & span {
@@ -33,7 +49,8 @@
 
     @include vp-1199 {
       font-size: 12px;
-      line-height: 18px;
+      line-height: 14px;
+      padding-top: 0;
     }
   }
 
@@ -57,8 +74,9 @@
     padding-right: 7px;
 
     @include vp-1199 {
-      font-size: 40px;
-      line-height: 60px;
+      font-size: 24px;
+      line-height: 34px;
+      padding-right: 5px;
     }
   }
 }
@@ -77,6 +95,8 @@
   @include vp-1199 {
     font-size: 48px;
     line-height: 46px;
+    width: 120px;
+    padding-top: 3px;
   }
 }
 
@@ -89,6 +109,9 @@
   @include vp-1199 {
     font-size: 12px;
     line-height: 18px;
+    padding-top: 1px;
+    padding-left: 2px;
+    margin-bottom: 0;
   }
 }
 
@@ -112,7 +135,10 @@
   @include vp-1199 {
     font-size: 10px;
     line-height: 12px;
-    width: 202px;
+    width: 100%;
+    min-height: 39px;
+    border: 2px solid $color-default-white;
+    margin-top: auto;
   }
 
   &:hover,

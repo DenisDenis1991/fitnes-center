@@ -1,5 +1,6 @@
 .user-nav {
   max-width: 65%;
+  margin-left: 11px;
 }
 
 .user-nav__list {
@@ -73,6 +74,8 @@
 
 .user-nav__link {
   color: $color-default-white;
+  line-height: 16px;
+  font-size: 14px;
 
   &:hover,
   &:active {
