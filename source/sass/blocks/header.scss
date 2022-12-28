@@ -6,11 +6,16 @@
   @include vp-1199 {
     top: 34px;
   }
+
+  @include vp-767 {
+    top: 16px;
+  }
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
@@ -26,6 +31,11 @@
     font-size: 24px;
     line-height: 29px;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .header__logo {
@@ -37,6 +47,15 @@
     & svg {
       width: 82px;
       height: 17px;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+
+    & svg {
+      width: 69px;
+      height: 24px;
     }
   }
 }

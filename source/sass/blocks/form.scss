@@ -6,12 +6,25 @@
   flex-direction: column;
   align-items: flex-end;
 
+  @include vp-1199 {
+    padding: 63px 160px 70px 130px;
+    align-items: flex-start;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+
   & form {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: end;
     margin-right: 11px;
+
+    @include vp-1199 {
+      align-items: flex-start;
+    }
   }
 }
 
@@ -27,6 +40,12 @@
 
   @media (max-width: 1250px) {
     padding: 0 10px 0 0;
+    margin-bottom: 34px;
+  }
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
   }
 }
 
@@ -36,9 +55,18 @@
   width: 100%;
   justify-content: end;
 
+  @include vp-1199 {
+    justify-content: flex-start;
+    gap: 56px;
+  }
+
   & label {
     max-width: 190px;
     width: 100%;
+
+    @include vp-1199 {
+      max-width: none;
+    }
   }
 
   & input {
@@ -63,4 +91,9 @@
   color: $color-default-white;
   margin-top: 30px;
   max-width: 410px;
+
+  @include vp-1199 {
+    max-width: none;
+    margin-top: 29px;
+  }
 }

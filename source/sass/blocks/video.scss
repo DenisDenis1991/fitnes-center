@@ -16,6 +16,16 @@
     bottom: 0;
     transform: translate(-50%, 50%);
   }
+
+  @include vp-767 {
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    transform: none;
+    left: 0;
+    padding-top: 51.2%;
+    height: 100%;
+  }
 }
 
 .video__link {

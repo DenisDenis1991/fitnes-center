@@ -1,6 +1,10 @@
 .footer {
   background-color: $black-russian;
   padding: 40px 0;
+
+  @include vp-1199 {
+    padding: 44px 0;
+  }
 }
 
 .footer__wrapper {
@@ -14,8 +18,19 @@
   height: 32px;
   padding-top: 5px;
 
+  @include vp-1199 {
+    height: 18px;
+    width: 82px;
+    padding-top: 3px;
+  }
+
   & svg {
     width: 100%;
+
+    @include vp-1199 {
+      height: 18px;
+      width: 82px;
+    }
   }
 
   @include vp-767 {

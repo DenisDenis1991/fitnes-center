@@ -1,6 +1,10 @@
 .user-nav {
   max-width: 65%;
   margin-left: 11px;
+
+  @include vp-1199 {
+    margin-left: 18px;
+  }
 }
 
 .user-nav__list {

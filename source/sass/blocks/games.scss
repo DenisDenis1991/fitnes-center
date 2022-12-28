@@ -12,6 +12,7 @@
 
   @include vp-1199 {
     padding: 47px 36px 53px 43px;
+    min-width: 292px;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -30,14 +31,14 @@
 }
 
 .games__day {
-  display: flex;
-  flex-direction: column;
+  margin-right: 4px;
 
   &:not(:last-child) {
     margin-bottom: 18px;
 
     @include vp-1199 {
-      margin-bottom: 0;
+      margin-top: -3px;
+      margin-bottom: -6px;
     }
   }
 
@@ -46,6 +47,18 @@
     width: 64px;
     font-size: 18px;
     line-height: 27px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 176%;
+      display: inline-block;
+      height: 1px;
+      background-color: $color-default-white;
+    }
 
     @include vp-1199 {
       font-size: 12px;
@@ -59,11 +72,14 @@
     align-items: center;
     font-size: 14px;
     line-height: 21px;
-    border-top: 1px solid $color-default-white;
+    margin-left: -3px;
+    margin-top: 3px;
 
     @include vp-1199 {
       font-size: 10px;
       line-height: 14px;
+      margin-left: 0;
+      margin-top: 0;
     }
   }
 
@@ -71,7 +87,6 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
-    padding-right: 7px;
 
     @include vp-1199 {
       font-size: 24px;
@@ -135,7 +150,7 @@
   @include vp-1199 {
     font-size: 10px;
     line-height: 12px;
-    width: 100%;
+    width: 96%;
     min-height: 39px;
     border: 2px solid $color-default-white;
     margin-top: auto;

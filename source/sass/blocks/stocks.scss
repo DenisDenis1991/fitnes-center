@@ -1,6 +1,10 @@
 .stocks__promo {
   color: $color-default-white;
   display: flex;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .stock__heading {
@@ -12,14 +16,26 @@
   letter-spacing: 0.03em;
   font-family: $ff-additional;
   margin-bottom: 32px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 37px;
+    padding-right: 10px;
+  }
 }
 
 .stocks__left {
-  width: 280px;
+  min-width: 280px;
   background-color: $torch-red;
   padding: 36px 45px 45px;
   display: flex;
   flex-direction: column;
+
+  @include vp-1199 {
+    min-width: 280px;
+    width: 100%;
+  }
 
   & b {
     font-weight: 700;
@@ -27,6 +43,36 @@
     line-height: 109px;
     display: block;
     margin-top: -29px;
+  }
+}
+
+.stocks__img {
+  min-height: 462px;
+  min-width: 280px;
+  width: 100%;
+  background-color: $color-neon-blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 1200px) {
+    background-image: url("./../img/content/promo.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/content/promo@2x.webp");
+    }
+  }
+
+  @include vp-1199 {
+    min-width: 399px;
+    background-image: url("./../img/content/promo-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/content/promo-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    min-width: auto;
   }
 }
 
@@ -41,6 +87,10 @@
   @include style-reset();
   font-size: 18px;
   line-height: 25px;
+
+  @include vp-1199 {
+    margin-top: 3px;
+  }
 }
 
 .stocks__btn {
@@ -64,11 +114,12 @@
 
 .stocks__wrapper {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
@@ -82,6 +133,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -108,8 +163,4 @@
 
 .stocks__card-description {
   margin: 0;
-}
-
-.stocks__img {
-  width: 100%;
 }
