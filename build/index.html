@@ -50,7 +50,7 @@
           <div class="intro__img">
             <picture>
               <source type="image/webp" srcset="img/content/intro.webp 1x, img/content/intro@2x.webp 2x">
-              <img class="intro__img" src="img/content/intro.jpg" width="500" height="556" alt="Фитнес центр"
+              <img src="img/content/intro.jpg" width="500" height="556" alt="Фитнес центр"
                 srcset="img/content/intro@2x.jpg 2x">
             </picture>
           </div>
@@ -71,6 +71,8 @@
           </div>
           <div class="about__img">
             <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/content/gym-mobile.webp 1x, img/content/gym-mobile@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/content/gym-tablet.webp 1x, img/content/gym-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/content/gym.webp 1x, img/content/gym@2x.webp 2x">
@@ -105,10 +107,8 @@
                   </linearGradient>
                 </defs>
               </svg>
-
             </button>
           </div>
-
         </div>
       </section>
       <section class="main__product product" id="product">
@@ -116,7 +116,7 @@
           <div class="product__wrapper">
             <h2 class="product__heading">Абонементы</h2>
             <div class="product__btn-box">
-              <button class="product__btn" type="button" data-number="1">1 месяц</button>
+              <button class="product__btn is-active" type="button" data-number="1">1 месяц</button>
               <button class="product__btn" type="button" data-number="2">6 месяцев</button>
               <button class="product__btn" type="button" data-number="3">12 месяцев</button>
             </div>
@@ -264,26 +264,25 @@
             <p class="games__description">Ежегодные соревнования по CrossFit</p>
             <a class="games__link" href="#">заполнить заявку</a>
           </div>
-          <picture>
-            <source type="image/webp" srcset="img/content/game.webp 1x, img/content/game@2x.webp 2x">
-            <img class="games__img" src="img/content/game.jpg" width="660" height="500" alt="Супер геймс"
-              srcset="img/content/game@2x.jpg 2x">
-          </picture>
+          <div class="games__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/content/game-mobile.webp 1x, img/content/game-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/game.webp 1x, img/content/game@2x.webp 2x">
+              <img src="img/content/game.jpg" width="660" height="500" alt="Супер геймс"
+                srcset="img/content/game@2x.jpg 2x">
+            </picture>
+          </div>
         </div>
       </article>
       <section class="main__coach coach">
         <div class="container">
-
-
           <h2 class="coach__heading">Тренеры</h2>
           <div class="coach__wrapper">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper coach-swiper">
-              <!-- Additional required wrapper -->
-
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide coach__slide">
                   <div class="coach__img">
                     <picture>
@@ -292,7 +291,6 @@
                         srcset="./img/content/anna@2x 2x.jpg">
                     </picture>
                   </div>
-
                   <h2 class="coach__name">Анна Павлова</h2>
                   <div class="coach__info">
                     <p class="coach__title">CrossFit</p>
@@ -367,7 +365,6 @@
                         srcset="./img/content/mary@2x 2x.jpg">
                     </picture>
                   </div>
-
                   <h2 class="coach__name">Мария Кетова</h2>
                   <div class="coach__info">
                     <p class="coach__title">CrossFit</p>
@@ -388,7 +385,6 @@
             </div>
           </div>
         </div>
-
       </section>
       <section class="main__advantages advantages">
         <div class="container">
@@ -414,6 +410,11 @@
                 <dd>Вы всегда найдете место для своей&nbsp;машины на нашей парковке</dd>
               </dl>
             </div>
+            <div class="advantages__special-block">
+              <b>100</b>
+              <p>Тренажеров</p>
+              <span>Современные тренажеры на&nbsp;все группы мышц</span>
+            </div>
             <div class="advantages__block">
               <div>
                 <p class="advantages__quantity">350</p>
@@ -433,11 +434,6 @@
                 <dt>Тренерский опыт</dt>
                 <dd>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</dd>
               </dl>
-            </div>
-            <div class="advantages__special-block">
-              <b>100</b>
-              <p>Тренажеров</p>
-              <span>Современные тренажеры на&nbsp;все группы мышц</span>
             </div>
           </div>
         </div>
@@ -470,7 +466,7 @@
               <div class="stocks__card">
                 <dl>
                   <dt class="stocks__card-title">Скидка 20%</dt>
-                  <dd class="stocks__card-description">Корпоративный фитнес с командой</dd>
+                  <dd class="stocks__card-description">Корпоративный фитнес с&nbsp;командой</dd>
                 </dl>
                 <a class="stocks__btn" href="#">подробнее</a>
               </div>
@@ -484,12 +480,8 @@
           <div class="feedback__wrapper">
             <div class=" feedback-button-prev"></div>
             <div class=" feedback-button-next"></div>
-
             <div class="swiper feedback__swiper">
-
-
               <div class="swiper-wrapper">
-
                 <div class="swiper-slide feedback__slide">
                   <picture>
                     <source type="image/webp" srcset="img/content/ellipse.webp 1x, img/content/ellipse@2x.webp 2x">
@@ -555,28 +547,31 @@
         <section class="user-info__contact contact">
           <h2 class="contact__heading">Контакты</h2>
           <div class="contact__wrapper">
-            <div>
-              <h3 class="contact__title">Адрес:</h3>
-              <address class="contact__description">
-                г. Омск, ул. 60 лет Октября, 7
-              </address>
-            </div>
-            <div>
-              <h3 class="contact__title">Телефон:</h3>
-              <a href="tel:88005555555" class="contact__description">8-800-555-55-55</a>
-            </div>
-            <div>
-              <h3 class="contact__title">График работы:</h3>
-              <p class="contact__description">Пн-Вс: с 8:00 до 22:00</p>
-            </div>
-            <div>
-              <h3 class="contact__title">Email:</h3>
-              <a class="contact__description" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-            </div>
+            <ul class="contact__list">
+              <li>
+                <h3 class="contact__title">Адрес:</h3>
+                <address class="contact__description">
+                  г. Омск, ул. 60 лет Октября, 7
+                </address>
+              </li>
+              <li>
+                <h3 class="contact__title">График работы:</h3>
+                <p class="contact__description">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+            </ul>
+            <ul class="contact__list">
+              <li>
+                <h3 class="contact__title">Телефон:</h3>
+                <a href="tel:88005555555" class="contact__description">8-800-555-55-55</a>
+              </li>
+              <li>
+                <h3 class="contact__title">Email:</h3>
+                <a class="contact__description" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
-
     </main>
     <footer class="footer">
       <div class="container">
@@ -643,44 +638,3 @@
   <script src="js/main.min.js"></script>
 </body>
 </html>
-
-
-<!-- <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
- -->
-
-<!-- Модалки -->
-<!-- <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div> -->

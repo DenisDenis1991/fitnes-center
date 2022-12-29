@@ -14,6 +14,12 @@
     margin-bottom: 30px;
     padding-right: 5px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 42px;
+  }
 }
 
 .coach__wrapper {
@@ -22,6 +28,10 @@
   @include vp-1199 {
     margin: 0 auto;
     padding: 0 55px;
+  }
+
+  @include vp-767 {
+    padding: 0 32px;
   }
 }
 
@@ -32,9 +42,14 @@
   flex-direction: column;
   justify-content: end;
   padding-bottom: 24px;
+  height: auto;
 
   @include vp-1199 {
     aspect-ratio: 260/286;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 260/314;
   }
 
   &:hover,
@@ -46,6 +61,11 @@
     @include vp-1199 {
       padding-top: 53px;
       padding-right: 2px;
+    }
+
+    @include vp-767 {
+      padding-top: 42px;
+      padding-right: 3px;
     }
   }
 
@@ -66,9 +86,11 @@
   height: 100%;
   width: 100%;
   top: 0;
+  background-color: $spindle;
 
   & img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -102,6 +124,10 @@
   @include list-reset();
   color: $color-default-white;
   padding-left: 49px;
+
+  @include vp-767 {
+    padding-left: 29px;
+  }
 
   & li {
     position: relative;

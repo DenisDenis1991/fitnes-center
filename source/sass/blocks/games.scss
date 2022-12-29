@@ -3,6 +3,10 @@
     display: flex;
     color: $color-default-white;
     align-items: stretch;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
   }
 }
 
@@ -16,6 +20,10 @@
     width: 45%;
     display: flex;
     flex-direction: column;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
   }
 }
 
@@ -128,6 +136,10 @@
     padding-left: 2px;
     margin-bottom: 0;
   }
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
 
 .games__link {
@@ -165,5 +177,28 @@
 .games__img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 660/500;
+  position: relative;
+  background-color: $egyptian-blue;
+
+  & img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 75.5%;
+
+    @include vp-1199 {
+      padding-top: 75.65%;
+    }
+
+    @include vp-767 {
+      padding-top: 98%;
+    }
+  }
 }

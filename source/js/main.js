@@ -9,7 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
   const textShow = document.querySelector('.about__text--add');
   // Utils
   // ---------------------------------
-
+  const videoPlay = document.querySelector('.video');
+  const videoLink = document.querySelector('.video__link');
+  videoPlay.addEventListener('click', () => {
+    videoLink.removeAttribute('href');
+    videoPlay.innerHTML = '<iframe class="video__content" allowfullscreen="" allow="autoplay" src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1" frameborder="0"></iframe>';
+  });
   iosVhFix();
 
   // Modules
@@ -19,12 +24,14 @@ window.addEventListener('DOMContentLoaded', () => {
   addCoachSwiper();
   addFeedbackSwiper();
   const slideActive = document.querySelectorAll('.swiper-slide-visible');
-  getTabIndex(slideActive);
+
   const breakpoint = window.matchMedia('(min-width:1200px)');
   const breakpointChecker = () => {
     if (breakpoint.matches) {
+      getTabIndex(slideActive);
       textShow.style.display = 'block';
     } else {
+      getTabIndex(slideActive);
       textShow.style.display = 'none';
     }
   };

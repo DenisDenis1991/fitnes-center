@@ -15,12 +15,21 @@
     padding-right: 10px;
     margin-bottom: 41px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .feedback__wrapper {
   position: relative;
   max-width: 562px;
   margin: 0 auto;
+
+  @include vp-767 {
+    padding: 0 33px;
+  }
 }
 
 .feedback__slide {
@@ -30,16 +39,41 @@
   height: auto;
   padding: 60px 60px 56px;
   display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 32px;
+  grid-template-columns: 80px 1fr;
+  column-gap: 32px;
+
+  @include vp-767 {
+    padding: 40px 25px 36px;
+    display: block;
+  }
+
+  & img {
+    @include vp-767 {
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      left: 39px;
+    }
+  }
 }
 
 .feedback__title {
   @include style-reset();
   margin-bottom: 12px;
+
+  @include vp-767 {
+    text-align: left;
+    padding-left: 98px;
+    margin-top: 11px;
+    margin-bottom: 25px;
+  }
 }
 
 .feedback__description {
   @include style-reset();
   line-height: 22px;
+
+  @include vp-767 {
+    text-align: center;
+  }
 }

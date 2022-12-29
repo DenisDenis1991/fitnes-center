@@ -89,6 +89,7 @@
     content: "";
     display: block;
     padding-top: 60.8%;
+    background-color: $light-gray;
 
     @include vp-1199 {
       padding-top: 50.8%;

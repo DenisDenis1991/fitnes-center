@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 0;
+    padding: 64px 15px;
   }
 }
 
@@ -24,25 +24,38 @@
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   &::after {
     content: "";
     display: block;
-    height: 95%;
+    height: 88%;
     width: 1px;
     background-color: $light-gray;
     position: absolute;
-    left: 225px;
-    top: 10px;
+    left: 230px;
+    top: 6px;
 
     @include vp-1199 {
       left: 266px;
       top: 8px;
       height: 87px;
     }
+
+    @include vp-767 {
+      display: none;
+    }
   }
+}
+
+.contact__list {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact__heading {
@@ -58,6 +71,11 @@
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 32px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
