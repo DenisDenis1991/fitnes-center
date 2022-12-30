@@ -16,8 +16,8 @@ const addFeedbackSwiper = () => {
   const swiper = new Swiper(feedbackSwiper, {
 
     navigation: {
-      nextEl: '.feedback-button-next',
-      prevEl: '.feedback-button-prev',
+      nextEl: '.feedback__button--next',
+      prevEl: '.feedback__button--prev',
     },
 
     slidesPerView: 1,
@@ -42,8 +42,8 @@ const addCoachSwiper = () => {
   const swiper = new Swiper(coachSwiper, {
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.coach__button--next',
+      prevEl: '.coach__button--prev',
     },
 
     breakpoints: {

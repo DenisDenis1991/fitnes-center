@@ -84,6 +84,7 @@
   width: 342px;
   display: flex;
   justify-content: space-between;
+  max-width: 340px;
 
   @include vp-1199 {
     margin-bottom: 43px;

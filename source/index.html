@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <title>Supergym</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/robotocondensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="page__header header">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo">
@@ -31,20 +31,22 @@
       <h1 class="visually-hidden">Фитнес зал Supergym</h1>
       <section class="main__intro intro">
         <div class="container">
-          <ul class="intro__list">
-            <li class="intro__item">
-              <p class="intro__description">Тренажерный зал</p>
-            </li>
-            <li class="intro__item">
-              <p class="intro__description">Групповые занятия</p>
-            </li>
-            <li class="intro__item">
-              <p class="intro__description">Кардио зона</p>
-            </li>
-          </ul>
-          <div class="intro__box">
+          <div class="intro__text-wrapper">
             <p class="intro__title">Омск</p>
-            <h2 class="intro__heading">Фитнес центр</h2>
+            <div class="intro__text-content">
+              <ul class="intro__list">
+                <li class="intro__item">
+                  <p class="intro__description">Тренажерный зал</p>
+                </li>
+                <li class="intro__item">
+                  <p class="intro__description">Групповые занятия</p>
+                </li>
+                <li class="intro__item">
+                  <p class="intro__description">Кардио зона</p>
+                </li>
+              </ul>
+              <h2 class="intro__heading">Фитнес центр</h2>
+            </div>
             <a class="intro__button" href="#product">купить абонемент</a>
           </div>
           <div class="intro__img">
@@ -54,6 +56,7 @@
                 srcset="img/content/intro@2x.jpg 2x">
             </picture>
           </div>
+        </div>
       </section>
       <section class="main__about about">
         <div class="container">
@@ -80,7 +83,7 @@
                 srcset="img/content/gym@2x.jpg">
             </picture>
           </div>
-          <div class="video">
+          <div class="about__video video">
             <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
               <picture>
                 <source type="image/webp" srcset="img/content/video.webp 1x, img/content/video@2x.webp 2x">
@@ -97,12 +100,12 @@
                 <defs>
                   <linearGradient id="paint0_linear_7653_167" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#ED0233" />
+                    <stop offset="1" stop-color="#ED0233" />
                     <stop offset="1" stop-color="#003EB7" />
                   </linearGradient>
                   <linearGradient id="paint1_linear_7653_167" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
                     gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#003D85" />
+                    <stop offset="0" stop-color="#003D85" />
                     <stop offset="0.885417" stop-color="#B80027" />
                   </linearGradient>
                 </defs>
@@ -279,8 +282,16 @@
         <div class="container">
           <h2 class="coach__heading">Тренеры</h2>
           <div class="coach__wrapper">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button type="button" class="coach__button coach__button--prev" aria-label="назад">
+              <svg aria-hidden="true" focusable="false" width="18" height="34" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#back"></use>
+              </svg>
+            </button>
+            <button type="button" class="coach__button coach__button--next" aria-label="вперед">
+              <svg aria-hidden="true" focusable="false" width="18" height="34" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#next"></use>
+              </svg>
+            </button>
             <div class="swiper coach-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide coach__slide">
@@ -288,7 +299,7 @@
                     <picture>
                       <source type="image/webp" srcset="img/content/anna.webp 1x, img/content/anna@2x.webp 2x">
                       <img width="260" height="294" src="./img/content/anna.jpg" alt="Тренер Анна"
-                        srcset="./img/content/anna@2x 2x.jpg">
+                        srcset="./img/content/anna@2x.jpg 2x">
                     </picture>
                   </div>
                   <h2 class="coach__name">Анна Павлова</h2>
@@ -312,10 +323,9 @@
                     <picture>
                       <source type="image/webp" srcset="img/content/alex.webp 1x, img/content/alex@2x.webp 2x">
                       <img width="260" height="294" src="./img/content/alex.jpg" alt="Тренер Алексей"
-                        srcset="./img/content/alex@2x 2x.jpg">
+                        srcset="./img/content/alex@2x.jpg 2x">
                     </picture>
                   </div>
-
                   <h2 class="coach__name">Алексей Лавров</h2>
                   <div class="coach__info">
                     <p class="coach__title">CrossFit</p>
@@ -337,7 +347,7 @@
                     <picture>
                       <source type="image/webp" srcset="img/content/alexandr.webp 1x, img/content/alexandr@2x.webp 2x">
                       <img width="260" height="294" src="./img/content/alexandr.jpg" alt="Тренер Александр"
-                        srcset="./img/content/alexandr@2x 2x.jpg">
+                        srcset="./img/content/alexandr@2x.jpg 2x">
                     </picture>
                   </div>
 
@@ -362,7 +372,104 @@
                     <picture>
                       <source type="image/webp" srcset="img/content/mary.webp 1x, img/content/mary@2x.webp 2x">
                       <img width="260" height="294" src="./img/content/mary.jpg" alt="Тренер Мария"
-                        srcset="./img/content/mary@2x 2x.jpg">
+                        srcset="./img/content/mary@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <h2 class="coach__name">Мария Кетова</h2>
+                  <div class="coach__info">
+                    <p class="coach__title">CrossFit</p>
+                    <ul class="coach__resume">
+                      <li>
+                        <p class="coach__description">Certified Level 3 Trainer</p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Победитель чемпионата России&nbsp;по CrossFit </p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Опыт — 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide coach__slide">
+                  <div class="coach__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/anna.webp 1x, img/content/anna@2x.webp 2x">
+                      <img width="260" height="294" src="./img/content/anna.jpg" alt="Тренер Анна"
+                        srcset="./img/content/anna@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <h2 class="coach__name">Анна Павлова</h2>
+                  <div class="coach__info">
+                    <p class="coach__title">CrossFit</p>
+                    <ul class="coach__resume">
+                      <li>
+                        <p class="coach__description">Certified Level 3 Trainer</p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Победитель чемпионата России&nbsp;по CrossFit </p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Опыт — 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide coach__slide">
+                  <div class="coach__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/alex.webp 1x, img/content/alex@2x.webp 2x">
+                      <img width="260" height="294" src="./img/content/alex.jpg" alt="Тренер Алексей"
+                        srcset="./img/content/alex@2x.jpg 2x">
+                    </picture>
+                  </div>
+                  <h2 class="coach__name">Алексей Лавров</h2>
+                  <div class="coach__info">
+                    <p class="coach__title">CrossFit</p>
+                    <ul class="coach__resume">
+                      <li>
+                        <p class="coach__description">Certified Level 3 Trainer</p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Победитель чемпионата России&nbsp;по CrossFit </p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Опыт — 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide coach__slide">
+                  <div class="coach__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/alexandr.webp 1x, img/content/alexandr@2x.webp 2x">
+                      <img width="260" height="294" src="./img/content/alexandr.jpg" alt="Тренер Александр"
+                        srcset="./img/content/alexandr@2x.jpg 2x">
+                    </picture>
+                  </div>
+
+                  <h2 class="coach__name">Александр Пашков</h2>
+                  <div class="coach__info">
+                    <p class="coach__title">CrossFit</p>
+                    <ul class="coach__resume">
+                      <li>
+                        <p class="coach__description">Certified Level 3 Trainer</p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Победитель чемпионата России&nbsp;по CrossFit </p>
+                      </li>
+                      <li>
+                        <p class="coach__description">Опыт — 6 лет</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide coach__slide">
+                  <div class="coach__img">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/mary.webp 1x, img/content/mary@2x.webp 2x">
+                      <img width="260" height="294" src="./img/content/mary.jpg" alt="Тренер Мария"
+                        srcset="./img/content/mary@2x.jpg 2x">
                     </picture>
                   </div>
                   <h2 class="coach__name">Мария Кетова</h2>
@@ -440,7 +547,7 @@
       </section>
       <section class="main__stocks stocks">
         <div class="container">
-          <h2 class="stock__heading">Акции</h2>
+          <h2 class="stocks__heading">Акции</h2>
           <div class="stocks__wrapper">
             <article class="stocks__promo">
               <div class="stocks__left">
@@ -456,6 +563,7 @@
               </div>
             </article>
             <article class="stocks__box">
+              <h2 class="visually-hidden">Акции</h2>
               <div class="stocks__card">
                 <dl>
                   <dt class="stocks__card-title">Месяц бесплатно</dt>
@@ -478,8 +586,16 @@
         <div class="container">
           <h2 class="feedback__heading">Отзывы</h2>
           <div class="feedback__wrapper">
-            <div class=" feedback-button-prev"></div>
-            <div class=" feedback-button-next"></div>
+            <button type="button" class="feedback__button feedback__button--prev" aria-label="назад">
+              <svg aria-hidden="true" focusable="false" width="18" height="34" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#back"></use>
+              </svg>
+            </button>
+            <button type="button" class="feedback__button feedback__button--next" aria-label="вперед">
+              <svg aria-hidden="true" focusable="false" width="18" height="34" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#next"></use>
+              </svg>
+            </button>
             <div class="swiper feedback__swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide feedback__slide">
@@ -573,7 +689,7 @@
         </section>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="page__footer footer">
       <div class="container">
         <div class="footer__wrapper">
           <a class="footer__logo">

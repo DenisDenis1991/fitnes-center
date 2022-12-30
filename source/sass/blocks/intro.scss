@@ -9,16 +9,42 @@
   }
 
   & .container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    padding-right: 259px;
+
+    @include vp-1199 {
+      padding-right: 45px;
+    }
 
     @include vp-767 {
       justify-content: space-between;
+      padding-right: 15px;
+      grid-template-columns: 1fr;
     }
   }
 
   @include vp-767 {
-    padding: 82px 0 139px;
+    padding: 82px 0 79px;
+  }
+}
+
+.intro__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 61px;
+  margin-top: 113px;
+
+  @include vp-1199 {
+    margin-right: 8px;
+    margin-top: 49px;
+    width: 45vw;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 24px;
   }
 }
 
@@ -33,16 +59,16 @@
 
 .intro__list {
   @include list-reset();
-  padding-left: 19px;
-  margin-top: 114px;
+  padding: 0 0 0 19px;
+  margin: 136px 0 0;
 
   @include vp-1199 {
-    margin-top: 45px;
+    margin-top: 97px;
     padding: 0;
   }
 
   @include vp-767 {
-    margin-top: 95px;
+    margin-top: 85px;
   }
 }
 
@@ -64,21 +90,37 @@
   line-height: 58px;
   letter-spacing: 0.03em;
   font-family: $ff-additional;
-  width: 133px;
-  margin: 19px 34px 0 auto;
+  padding-right: 52px;
+  text-align: right;
 
   @include vp-1199 {
     font-size: 34px;
     line-height: 41px;
-    margin: 2px -45px 0 auto;
+    padding-right: 24px;
   }
 
   @include vp-767 {
     width: auto;
     font-size: 28px;
     line-height: 34px;
-    margin: 3px 3px 12px;
+    margin: 3px 3px 5px;
     text-align: end;
+    padding: 0;
+  }
+}
+
+.intro__text-content {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: max-content min-content;
+
+  @include vp-1199 {
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    gap: 0;
   }
 }
 
@@ -90,16 +132,15 @@
   line-height: 110px;
   text-align: right;
   letter-spacing: 0.05em;
-  width: 298px;
+  max-width: 266px;
   margin: 13px 0 50px;
-  padding: 0 33px 0 0;
+  padding: 0;
   text-transform: uppercase;
 
   @include vp-1199 {
     font-size: 74px;
     line-height: 86px;
     text-transform: none;
-    width: 235px;
     letter-spacing: 0.03em;
     margin: 7px 0 37px;
     padding: 0 22px 0 0;
@@ -126,65 +167,50 @@
   display: flex;
   justify-content: center;
   width: 230px;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 
   @include vp-1199 {
     padding: 19px 19px;
     width: 187px;
+    margin-right: 20px;
   }
 
   @include vp-767 {
-    width: 92%;
-    position: absolute;
-    left: 15px;
+    width: 100%;
   }
 }
 
 .intro__img {
-  margin-left: 31px;
-  z-index: 2;
+  position: relative;
   background-color: $persian-blue;
-
-  @include vp-1199 {
-    margin-left: 0;
-    aspect-ratio: 324/390;
-  }
+  flex: 1 0 500px;
+  height: auto;
 
   @include vp-767 {
     display: none;
   }
 
+  &::before {
+    display: block;
+    padding-top: 111.2%;
+    content: "";
+
+
+    @include vp-1199 {
+      padding-top: 120.8%;
+    }
+
+    @include vp-767 {
+      padding-top: 98%;
+    }
+  }
+
   & img {
+    position: absolute;
+    left: 0;
+    top: 0;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
-
-// .intro__img {
-//   margin-left: 16px;
-//   z-index: 2;
-//   background-color: $persian-blue;
-
-//   &::before {
-//     content: "";
-//     display: block;
-//     padding-top: 60.8%;
-
-
-//     @include vp-1199 {
-//       padding-top: 50.8%;
-//     }
-
-//     @include vp-767 {
-//       padding-top: 98%;
-//     }
-//   }
-
-//   & img {
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     height: 100%;
-//     width: 100%;
-//     object-fit: cover;
-//   }
-// }
