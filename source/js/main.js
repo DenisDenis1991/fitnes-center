@@ -6,7 +6,8 @@ import {switchProduct} from './modules/product';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  const textShow = document.querySelector('.about__text--add');
+  const aboutBlock = document.querySelector('.about');
+  const textShow = aboutBlock.getElementsByTagName('aside');
   // Utils
   // ---------------------------------
   const videoPlay = document.querySelector('.video');
@@ -29,10 +30,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const breakpointChecker = () => {
     if (breakpoint.matches) {
       getTabIndex(slideActive);
-      textShow.style.display = 'block';
+      textShow[0].style.display = 'block';
     } else {
       getTabIndex(slideActive);
-      textShow.style.display = 'none';
+      textShow[0].style.display = 'none';
     }
   };
   breakpoint.addListener(breakpointChecker);

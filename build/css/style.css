@@ -2488,6 +2488,15 @@ button,
   margin-bottom: 38px;
 }
 
+.about aside {
+  padding: 0;
+  margin: 0;
+  margin-top: 7px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .about .container {
   display: -ms-grid;
   display: grid;
@@ -2517,10 +2526,6 @@ button,
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-}
-
-.about__text--add {
-  margin-top: 7px;
 }
 
 .about__img {
@@ -3460,6 +3465,10 @@ button,
     margin-bottom: 33px;
   }
 
+  .about aside {
+    padding: 0 54px;
+  }
+
   .about .container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -4060,6 +4069,10 @@ button,
   .about article {
     margin-bottom: 24px;
     padding: 0 15px;
+  }
+
+  .about aside {
+    padding: 0 42px 0 15px;
   }
 
   .about .container {
