@@ -2480,6 +2480,14 @@ button,
   position: relative;
 }
 
+.about article {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 38px;
+}
+
 .about .container {
   display: -ms-grid;
   display: grid;
@@ -2501,14 +2509,6 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   letter-spacing: 0.03em;
   margin: 37px 0 10px;
-}
-
-.about__description {
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 38px;
 }
 
 .about__text {
@@ -3456,6 +3456,10 @@ button,
     height: 73px;
   }
 
+  .about article {
+    margin-bottom: 33px;
+  }
+
   .about .container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -3469,10 +3473,6 @@ button,
     line-height: 50px;
     margin: 0;
     padding-right: 14px;
-  }
-
-  .about__description {
-    margin-bottom: 33px;
   }
 
   .about__text {
@@ -4057,6 +4057,11 @@ button,
     height: 100%;
   }
 
+  .about article {
+    margin-bottom: 24px;
+    padding: 0 15px;
+  }
+
   .about .container {
     padding: 0;
     text-align: left;
@@ -4069,11 +4074,6 @@ button,
     line-height: 38px;
     text-align: left;
     margin-bottom: 5px;
-    padding: 0 15px;
-  }
-
-  .about__description {
-    margin-bottom: 24px;
     padding: 0 15px;
   }
 
