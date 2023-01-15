@@ -168,6 +168,12 @@
   justify-content: center;
   width: 230px;
   margin: 0 0 0 auto;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   @include vp-1199 {
     padding: 19px 19px;

@@ -2,11 +2,18 @@
   @include list-reset();
   max-width: 100px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  gap: 20px;
 
   & svg {
     fill: $color-default-white;
+  }
+}
+
+.social__link {
+  &:hover svg,
+  &:focus svg {
+    fill: $crimson;
   }
 }

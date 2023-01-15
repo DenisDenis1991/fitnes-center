@@ -18,6 +18,12 @@
   flex-wrap: wrap;
 }
 
+.header__tel-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 154px;
+}
 
 .header__tel {
   font-family: $ff-additional;

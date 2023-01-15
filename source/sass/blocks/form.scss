@@ -107,6 +107,12 @@
   margin-top: 30px;
   max-width: 410px;
   text-transform: uppercase;
+  word-break: break-all;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   &:disabled {
     border-color: $light-gray;

@@ -102,6 +102,7 @@
   @include style-reset();
   font-size: 18px;
   line-height: 25px;
+  margin-bottom: 10px;
 
   @include vp-1199 {
     margin-top: 3px;
@@ -122,6 +123,11 @@
   border-bottom: 1px solid $resolution-blue;
   margin-top: auto;
   width: fit-content;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   &--left {
     font-size: 14px;
@@ -145,7 +151,7 @@
 .stocks__box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 40px;
   color: $resolution-blue;
 
   @include vp-1199 {
@@ -187,5 +193,5 @@
 }
 
 .stocks__card-description {
-  margin: 0;
+  margin: 0 0 10px 0;
 }
