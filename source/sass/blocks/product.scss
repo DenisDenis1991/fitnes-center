@@ -276,13 +276,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 206px;
+  max-width: 206px;
+  width: 100%;
   min-height: 64px;
   height: 100%;
   border: 2px solid $sapphire;
   text-align: center;
 
   @include vp-1199 {
+    max-width: none;
     width: 100%;
   }
 

@@ -66,6 +66,8 @@
   background-color: $cobalt;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
+
 
   @media (min-width: 1200px) {
     background-image: url("./../img/content/promo.webp");

@@ -168,6 +168,11 @@
   padding: 0;
   background-color: transparent;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   & svg {
     @include vp-767 {
       width: 10px;

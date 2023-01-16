@@ -1,14 +1,13 @@
 .header {
-  position: absolute;
-  width: 100%;
-  top: 30px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  margin-bottom: 123px;
 
   @include vp-1199 {
-    top: 34px;
+    margin-bottom: 102px;
   }
 
   @include vp-767 {
-    top: 16px;
+    margin-bottom: 65px;
   }
 }
 
@@ -16,6 +15,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 31px 0;
+
+  @include vp-1199 {
+    margin: 33px 0 0 0;
+  }
+
+  @include vp-767 {
+    margin: 16px 0 0 0;
+  }
 }
 
 .header__tel-box {
@@ -23,6 +31,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 154px;
+
+  @include vp-1199 {
+    max-width: 450px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .header__tel {
@@ -41,6 +55,11 @@
   @include vp-767 {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
