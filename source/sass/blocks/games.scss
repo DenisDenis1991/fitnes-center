@@ -188,22 +188,4 @@
     height: 100%;
     width: 100%;
   }
-
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   padding-top: 75.5%;
-
-  //   @media (max-width: 1280px) {
-  //     padding-top: 85.9%;
-  //   }
-
-  //   @include vp-1199 {
-  //     padding-top: 75.65%;
-  //   }
-
-  //   @include vp-767 {
-  //     padding-top: 98%;
-  //   }
-  // }
 }

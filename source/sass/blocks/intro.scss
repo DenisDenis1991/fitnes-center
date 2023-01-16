@@ -15,6 +15,7 @@
 
     @include vp-1199 {
       padding-right: 45px;
+      gap: 30px;
     }
 
     @include vp-767 {
@@ -36,15 +37,16 @@
   margin-top: 113px;
 
   @include vp-1199 {
-    margin-right: 8px;
     margin-top: 49px;
-    width: 45vw;
+    max-width: 324px;
+    margin-right: 0;
   }
 
   @include vp-767 {
     width: 100%;
     margin-right: 0;
     margin-top: 24px;
+    max-width: 100%;
   }
 }
 
@@ -96,7 +98,7 @@
   @include vp-1199 {
     font-size: 34px;
     line-height: 41px;
-    padding-right: 24px;
+    padding-right: 4px;
   }
 
   @include vp-767 {
@@ -116,11 +118,11 @@
 
   @include vp-1199 {
     gap: 20px;
-    justify-content: space-between;
   }
 
   @include vp-767 {
     gap: 0;
+    justify-content: space-between;
   }
 }
 
@@ -143,7 +145,6 @@
     text-transform: none;
     letter-spacing: 0.03em;
     margin: 7px 0 37px;
-    padding: 0 22px 0 0;
   }
 
   @include vp-767 {
@@ -178,7 +179,6 @@
   @include vp-1199 {
     padding: 19px 19px;
     width: 187px;
-    margin-right: 20px;
   }
 
   @include vp-767 {
@@ -191,6 +191,10 @@
   background-color: $persian-blue;
   flex: 1 0 500px;
   height: auto;
+
+  @include vp-1199 {
+    max-width: 500px;
+  }
 
   @include vp-767 {
     display: none;

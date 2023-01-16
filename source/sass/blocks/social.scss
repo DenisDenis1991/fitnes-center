@@ -9,6 +9,10 @@
   & svg {
     fill: $color-default-white;
   }
+
+  @include vp-767 {
+    gap: 11px;
+  }
 }
 
 .social__link {

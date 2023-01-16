@@ -25,7 +25,7 @@ const addFeedbackSwiper = () => {
     loop: false,
 
     keyboard: {
-      enabled: false,
+      enabled: true,
       onlyInViewport: true,
     },
 

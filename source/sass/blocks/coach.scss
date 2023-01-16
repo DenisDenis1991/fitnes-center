@@ -5,7 +5,7 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin-bottom: 51px;
+  margin-bottom: 49px;
 
   @include vp-1199 {
     font-size: 42px;
@@ -41,7 +41,7 @@
   flex-direction: column;
   justify-content: end;
   padding-bottom: 24px;
-  padding-top: 236px;
+  padding-top: 243px;
   height: auto;
 
   @include vp-1199 {
@@ -50,6 +50,7 @@
 
   @include vp-767 {
     aspect-ratio: 260/314;
+    padding-top: 0;
   }
 
   &:hover,

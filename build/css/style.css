@@ -1945,7 +1945,7 @@ button,
 }
 
 .product__item {
-  padding: 58px 70px;
+  padding: 55px 70px 60px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1992,8 +1992,7 @@ button,
   height: 42px;
 }
 
-.product__item:hover,
-.product__item:focus {
+.product__item:hover {
   border: 7px solid transparent;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-width: 7px;
@@ -2001,8 +2000,15 @@ button,
   outline: none;
 }
 
-.product__item:hover .product__link,
-.product__item:focus .product__link {
+.product__item:focus-within {
+  border: 7px solid transparent;
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-width: 7px;
+  border-image-slice: 3;
+  outline: none;
+}
+
+.product__item:hover .product__link {
   color: #ffffff;
   border: none;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #0041ca 95.31%);
@@ -2076,11 +2082,14 @@ button,
 
 .product__link:hover,
 .product__link:focus {
+  color: #ffffff;
   border: 2px solid transparent;
   border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-width: 2px;
   border-image-slice: 3;
   outline: none;
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #0041ca 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #0041ca 95.31%);
 }
 
 .coach__heading {
@@ -2092,7 +2101,7 @@ button,
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin-bottom: 51px;
+  margin-bottom: 49px;
 }
 
 .coach__wrapper {
@@ -2112,7 +2121,7 @@ button,
   -ms-flex-pack: end;
   justify-content: end;
   padding-bottom: 24px;
-  padding-top: 236px;
+  padding-top: 243px;
   height: auto;
 }
 
@@ -3270,12 +3279,13 @@ button,
 
   .intro .container {
     padding-right: 45px;
+    gap: 30px;
   }
 
   .intro__text-wrapper {
-    margin-right: 8px;
     margin-top: 49px;
-    width: 45vw;
+    max-width: 324px;
+    margin-right: 0;
   }
 
   .intro__box {
@@ -3295,14 +3305,11 @@ button,
   .intro__title {
     font-size: 34px;
     line-height: 41px;
-    padding-right: 24px;
+    padding-right: 4px;
   }
 
   .intro__text-content {
     gap: 20px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .intro__heading {
@@ -3311,13 +3318,15 @@ button,
     text-transform: none;
     letter-spacing: 0.03em;
     margin: 7px 0 37px;
-    padding: 0 22px 0 0;
   }
 
   .intro__button {
     padding: 19px 19px;
     width: 187px;
-    margin-right: 20px;
+  }
+
+  .intro__img {
+    max-width: 500px;
   }
 
   .intro__img::before {
@@ -3836,6 +3845,7 @@ button,
     width: 100%;
     margin-right: 0;
     margin-top: 24px;
+    max-width: 100%;
   }
 
   .intro__list {
@@ -3853,6 +3863,9 @@ button,
 
   .intro__text-content {
     gap: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .intro__heading {
@@ -3943,6 +3956,7 @@ button,
 
   .coach__slide {
     aspect-ratio: 260/314;
+    padding-top: 0;
   }
 
   .coach__slide:hover,
@@ -3966,6 +3980,10 @@ button,
 
   .coach__button--next {
     right: -3%;
+  }
+
+  .social {
+    gap: 11px;
   }
 
   .user-nav {
@@ -4169,7 +4187,7 @@ button,
   }
 
   .main__games {
-    margin-bottom: 69px;
+    margin-bottom: 62px;
   }
 
   .main__advantages {
@@ -4268,12 +4286,12 @@ button,
 
   .feedback__button--prev {
     left: -3%;
-    top: 146px;
+    top: 45%;
   }
 
   .feedback__button--next {
     right: -3%;
-    top: 146px;
+    top: 45%;
   }
 
   .form {
