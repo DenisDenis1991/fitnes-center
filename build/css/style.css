@@ -1950,7 +1950,7 @@ button,
 }
 
 .product__item {
-  padding: 55px 70px 60px;
+  padding: 55px 61px 60px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2127,7 +2127,7 @@ button,
   -ms-flex-pack: end;
   justify-content: end;
   padding-bottom: 24px;
-  padding-top: 243px;
+  aspect-ratio: 260/294;
   height: auto;
 }
 
@@ -2138,6 +2138,7 @@ button,
   -ms-flex-pack: start;
   justify-content: start;
   padding-top: 50px;
+  padding-bottom: 0;
 }
 
 .coach__slide:hover .coach__info,
@@ -2236,9 +2237,15 @@ button,
   background-color: transparent;
 }
 
-.coach__button:hover,
-.coach__button:focus {
-  opacity: 0.5;
+.coach__button:hover svg,
+.coach__button:focus svg {
+  -webkit-filter: drop-shadow(0 0 2px #ed0233);
+  filter: drop-shadow(0 0 2px #ed0233);
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  -o-transition: filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
 .coach__button--prev {
@@ -2961,9 +2968,15 @@ button,
   opacity: 0.2;
 }
 
-.feedback__button:hover,
-.feedback__button:focus {
-  opacity: 0.5;
+.feedback__button:hover svg,
+.feedback__button:focus svg {
+  -webkit-filter: drop-shadow(0 0 2px #ed0233);
+  filter: drop-shadow(0 0 2px #ed0233);
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  -o-transition: filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
 }
 
 .feedback__button--prev {
@@ -3144,6 +3157,14 @@ button,
   max-width: 112px;
 }
 
+.contact__list--right .contact__description {
+  max-width: 150px;
+}
+
+.contact__list--right .contact__description--tel {
+  max-width: 90px;
+}
+
 .contact__heading {
   padding: 0;
   margin: 0;
@@ -3170,6 +3191,8 @@ button,
   line-height: 21px;
   font-style: normal;
   padding-bottom: 5px;
+  display: inline-block;
+  word-break: break-all;
 }
 
 .contact__description:hover,
@@ -3429,6 +3452,7 @@ button,
 
   .coach__slide {
     aspect-ratio: 260/286;
+    min-height: auto;
   }
 
   .coach__slide:hover,
@@ -3780,6 +3804,10 @@ button,
 
   .contact__list {
     max-width: 218px;
+  }
+
+  .contact__list--right .contact__description--tel {
+    max-width: 116px;
   }
 
   .contact__heading {
@@ -4263,6 +4291,7 @@ button,
     min-width: auto;
     padding-top: 103%;
     min-height: 299px;
+    background-position-y: 16%;
   }
 
   .stocks__description {

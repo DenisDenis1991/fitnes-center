@@ -41,11 +41,12 @@
   flex-direction: column;
   justify-content: end;
   padding-bottom: 24px;
-  padding-top: 243px;
+  aspect-ratio: 260/294;
   height: auto;
 
   @include vp-1199 {
     aspect-ratio: 260/286;
+    min-height: auto;
   }
 
   @include vp-767 {
@@ -58,6 +59,7 @@
     background: rgba(16, 38, 84, 0.89);
     justify-content: start;
     padding-top: 50px;
+    padding-bottom: 0;
 
     @include vp-1199 {
       padding-top: 53px;
@@ -168,9 +170,10 @@
   padding: 0;
   background-color: transparent;
 
-  &:hover,
-  &:focus {
-    opacity: 0.5;
+  &:hover svg,
+  &:focus svg {
+    filter: drop-shadow(0 0 2px $torch-red);
+    transition: filter $trans-default;
   }
 
   & svg {

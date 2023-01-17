@@ -61,9 +61,21 @@
   @include vp-1199 {
     max-width: 218px;
   }
+}
 
-  &--right {
-    max-width: 112px;
+.contact__list--right {
+  max-width: 112px;
+
+  & .contact__description {
+    max-width: 150px;
+  }
+
+  & .contact__description--tel {
+    max-width: 90px;
+
+    @include vp-1199 {
+      max-width: 116px;
+    }
   }
 }
 
@@ -107,6 +119,8 @@
   line-height: 21px;
   font-style: normal;
   padding-bottom: 5px;
+  display: inline-block;
+  word-break: break-all;
 
   @include vp-1199 {
     font-size: 18px;

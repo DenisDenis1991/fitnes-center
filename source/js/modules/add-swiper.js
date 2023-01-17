@@ -56,7 +56,7 @@ const addCoachSwiper = () => {
         spaceBetween: 30,
         initialSlide: 2,
       },
-      1199: {
+      1200: {
         slidesPerView: 4,
         spaceBetween: 40,
         initialSlide: 0,
